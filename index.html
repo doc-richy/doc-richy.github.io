@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="audio/x-wav; autoplay '*'">
+  <meta http-equiv="Cache-Control" content="max-age=3600">
+  <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+
+  <title>Yo Game</title>
+  <link rel="icon" type="imege/png" href="./favicon_16.png">
+  <link rel="icon" type="imege/png" href="./favicon_32.png">
+  <link rel="icon" type="imege/png" href="./favicon_48.png">
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body >
+  <!-- <div id="wait"> -->
+    <video id ="wait-video" autoplay loop muted width="100" >  <!-- poster="./images/animation_poster.jpg"> -->
+      <source src="./images/animation.webm" type="video/webm">
+      <source src="./images/animation.avi" type='video/avi'>
+      <source src="./images/animation.mp4" type='video/mp4; codecs="hvc1, AVC1.4D401E, MP4A.40.2"'>
+      <p>Video can't be played on this browser ...</p>
+    </video>
+
+  <!-- </div> -->
+
+  <main id="main">
+    <nav class="floating-menu">
+      <img id="btn-1"></img>
+      <img id="btn-2"></img>
+    </nav>
+
+    <div id="infodiv" class="info">
+      <iframe id="infoframe" class="iframe" src="./html_page/info.html"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        width="100%"
+        height="100%"
+        scrolling="auto"    
+      ></iframe>
+    </div>
+  </main>
+  <script type="module" src="index.js"></script>
+</body>
+</html>
