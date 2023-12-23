@@ -87,6 +87,9 @@ body {
 }
 
 main {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: auto;
   margin: 0 0;
@@ -219,8 +222,8 @@ main:fullscreen {
 } */
 
 .floating-menu.show {
-  animation-name: menuShow;
-  animation-duration: 2s;
+  /* animation-name: menuShow;
+  animation-duration: 2s; */
   opacity: 100%;
   visibility: visible;
 }
@@ -230,11 +233,11 @@ main:fullscreen {
   opacity: 90%;
 }
 
-.floating-menu.hide {
-  animation-name: menuHide;
-  animation-duration: 1s;
- /*  visibility: hidden; */
-}
+/* .floating-menu.hide {
+  /* animation-name: menuHide;
+  animation-duration: 1s; 
+ /*  visibility: hidden; 
+} */
 
 #btn-4 {
   width: 10vw;
