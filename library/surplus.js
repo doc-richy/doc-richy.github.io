@@ -1,1 +1,1 @@
-const getMethods=e=>{let t=new Set;return Object.keys(e).map(e=>t.add(e)),Object.getOwnPropertyNames(Object.getPrototypeOf(e)).map(e=>t.add(e)),t};export{getMethods};
+var e=e=>{let t=new Set;return Object.keys(e).map(e=>t.add(e)),Object.getOwnPropertyNames(Object.getPrototypeOf(e)).map(e=>t.add(e)),t};export{e as getMethods};
