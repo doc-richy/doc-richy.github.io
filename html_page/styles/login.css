@@ -6,28 +6,29 @@
   --color-scroll-track: #ffec4b;
   --color-scrool-thumb: #FFA80F;
 
-  --font-header: 30px;
-  --font-footer: 25px;
-  --font-p: 30px;
-  --font-buttons: 20px;
+  --font-header: 2rem;
+  --font-footer: 1.5rem;
+  --font-p: 1.5rem;
+  --font-buttons: 1.2rem;
 
-  --btn-width: 150px;
-  --bnt-height: 50px;
+  --btn-width: 6rem;
+  --bnt-height: 2.5rem;
 
-  --img-w: 128px;
-  --img-h: 128px;
+  --img-w: 5rem;
+  --img-h: 5rem;
   --div-x-img: 6;
-  --margin-top-html: 100px;
-  --margin-line: 10px;
-  --margin-flex: 10%;
+  --margin-top-html: 5rem;
+  --margin-line: 0.8rem;
+  --margin-flex: 5%;
 
-  --margin-p-h: 20px;
-  --margin-p-v: 10px;
-  --margin-footer-right: 50px;
-  --scroll-bar-dim: 15px;
+  --margin-p-h: 1.2rem;
+  --margin-p-v: 0.8rem;
+  --margin-footer-right: 2rem;
+  --scroll-bar-dim: 1rem;
 
-  --win-innerheight: 500px;
-  --label-width:150px;
+  --win-innerheight: 35rem;
+  --label-width: 10rem;
+  --input-width: 20rem;
 }
 
 ::-webkit-scrollbar {
@@ -56,7 +57,7 @@ main {
 main > p {
   font-size: var(--font-p);
   margin: var(--margin-p-v) var(--margin-p-h);
-  text-align: left;
+  text-align: justify;
 }
 
 
@@ -64,14 +65,15 @@ main > p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  width: 90%;
+  justify-content: center;
+  width: 100%;
   
  /*  border: 2px solid black; */
   /* column-gap: 10px; */
   /* margin: var(--margin-line) var(--margin-line); */
   margin-top: 5%;
-  margin-left: 10%;
+  margin-left: auto;
+  margin-right: auto;
   font-size: var(--font-header);  
 }
 
@@ -79,8 +81,7 @@ main > p {
   width: var(--label-width);
 }
 
-button {
-/*   align-self: flex-end; */
+/* button {
   width: var(--btn-width);
   height: var(--bnt-height);
   background: linear-gradient( #FFEC4B,#FFA80F,#FFEC4B);
@@ -92,6 +93,16 @@ button {
   transform: translate(-50%, -50%);
   border-radius: calc(var(--bnt-height) / 2);
   border: calc(0.08 * var(--bnt-height)) solid black;
+} */
+
+button {
+  width: var(--btn-width);
+  height: var(--bnt-height);
+  background: linear-gradient( #FFEC4B,#FFA80F,#FFEC4B);
+  font-size: var(--font-buttons);
+  border-radius: calc(var(--bnt-height) / 2);
+  border: calc(0.08 * var(--bnt-height)) solid black;
+  margin-top: 5%;
 }
 
 button:hover {
@@ -100,14 +111,19 @@ button:hover {
 
 #mainLogin{
   margin-top: 5%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #mainLogin input{
-  margin-left: 10px;
-  height: 40px;
-  font-size: 30px;
+  width: var(--input-width);
+  height: 2.5rem;
+  font-size: var(--font-p);
 }
 
 /* #mainLogin button{
