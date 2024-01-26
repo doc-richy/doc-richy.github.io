@@ -6,29 +6,27 @@
   --color-scroll-track: #ffec4b;
   --color-scrool-thumb: #FFA80F;
 
-  --font-header: 2rem;
-  --font-footer: 1.5rem;
-  --font-p: 1.5rem;
-  --font-buttons: 1.2rem;
+  --font-header: 30px;
+  --font-footer: 25px;
+  --font-p: 30px;
+  --font-buttons: 20px;
 
-  --btn-width: 6rem;
-  --bnt-height: 2.5rem;
+  --btn-width: 150px;
+  --bnt-height: 50px;
 
-  --img-w: 5rem;
-  --img-h: 5rem;
+  --img-w: 128px;
+  --img-h: 128px;
   --div-x-img: 6;
-  --margin-top-html: 5rem;
-  --margin-line: 0.8rem;
-  --margin-flex: 5%;
+  --margin-top-html: 100px;
+  --margin-line: 10px;
+  --margin-flex: 10%;
 
-  --margin-p-h: 1.2rem;
-  --margin-p-v: 0.8rem;
-  --margin-footer-right: 2rem;
-  --scroll-bar-dim: 1rem;
+  --margin-p-h: 20px;
+  --margin-p-v: 10px;
+  --margin-footer-right: 50px;
+  --scroll-bar-dim: 15px;
 
-  --win-innerheight: 35rem;
-  --label-width: 10rem;
-  --input-width: 20rem;
+  --win-innerheight: 500px;
 }
 
 ::-webkit-scrollbar {
@@ -78,7 +76,7 @@ main > p {
 }
 
 #line label {
-  width: var(--label-width);
+  width: calc(7 * var(--font-p));
 }
 
 /* button {
@@ -110,7 +108,7 @@ button:hover {
 }
 
 #mainLogin{
-  margin-top: 5%;
+  margin-top: calc( var(--font-p));
   margin-left: auto;
   margin-right: auto;
   width: 90%;
@@ -121,8 +119,8 @@ button:hover {
 }
 
 #mainLogin input{
-  width: var(--input-width);
-  height: 2.5rem;
+  width: calc(15 * var(--font-p));
+  height: calc(2 * var(--font-p));
   font-size: var(--font-p);
 }
 
