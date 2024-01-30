@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="notranslate" translate="no">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-type" content="audio/x-wav; autoplay '*'">
   <meta http-equiv="Cache-Control" content="max-age=3600">
   <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+  <!-- <meta name="google" content="notranslate"> -->
 
   <title>Yo Game</title>
   <link rel="icon" type="imege/png" href="./favicon_16.png">
@@ -15,16 +16,17 @@
 </head>
 <body >
   <!-- <div id="wait"> -->
-    <video id ="wait-video" autoplay loop muted width="100" >  <!-- poster="./images/animation_poster.jpg"> -->
+    <video id ="wait-video" autoplay loop muted width="100" >
+      <source src="./images/animation.mp4" type='video/mp4'>
       <source src="./images/animation.webm" type="video/webm">
       <source src="./images/animation.avi" type='video/avi'>
-      <source src="./images/animation.mp4" type='video/mp4; codecs="hvc1, AVC1.4D401E, MP4A.40.2"'>
       <p>Video can't be played on this browser ...</p>
     </video>
 
   <!-- </div> -->
 
-  <main id="main" tabindex="0">
+  <main id="main" tabindex="1">
+    <p id="focusp" tabindex="-1"></p>
     <nav class="floating-menu">
       <img id="btn-1"></img>
       <img id="btn-2"></img>
@@ -32,7 +34,7 @@
     </nav>
 
     <div id="infodiv" class="info">
-      <iframe id="infoframe" class="iframe" src="./html_page/info.html"
+      <iframe id="infoframe" class="iframe" src="./html_page/about.html"
         frameborder="0"
         marginheight="0"
         marginwidth="0"
