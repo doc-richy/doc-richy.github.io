@@ -3,7 +3,7 @@ let btn_1 = document.getElementById("btn-1");
 let btn_2 = document.getElementById("btn-2");
 let btn_3 = document.getElementById("btn-3");
 /* let btn_4 = document.getElementById("btn-4");
-let btn_5 = document.getElementById("btn-5") */;
+let btn_5 = document.getElementById("btn-5"); */
 let mainTag = document.getElementById("main");
 let para = document.getElementById("para");
 /* 
@@ -65,7 +65,7 @@ btn_5.onclick = () => {
   else window.top.postMessage("message", "*");
 } */
 
-mainTag.onclick = () => {
+/* mainTag.onclick = () => {
   if (parent.infoHide)  parent.infoHide(this);
   else window.top.postMessage("message", "*");
-}
+} */
